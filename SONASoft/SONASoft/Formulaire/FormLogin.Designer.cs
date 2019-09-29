@@ -52,9 +52,9 @@
             // 
             // BtnConnexion
             // 
-            this.BtnConnexion.Location = new System.Drawing.Point(123, 101);
+            this.BtnConnexion.Location = new System.Drawing.Point(94, 100);
             this.BtnConnexion.Name = "BtnConnexion";
-            this.BtnConnexion.Size = new System.Drawing.Size(133, 30);
+            this.BtnConnexion.Size = new System.Drawing.Size(170, 30);
             this.BtnConnexion.TabIndex = 4;
             this.BtnConnexion.Text = "Connexion";
             this.BtnConnexion.UseVisualStyleBackColor = true;

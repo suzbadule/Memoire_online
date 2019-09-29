@@ -9,6 +9,11 @@ namespace Librairie.Classes
     {
         public static User _user;
 
+        public User()
+        {
+            this.UsernameSession = null;
+        }
+
         public string Username { get; set; }
 
         public string Password { get; set; }
