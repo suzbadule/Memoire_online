@@ -47,9 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ClassAccident.cs" />
+    <Compile Include="Classes\ClassAcheter.cs" />
     <Compile Include="Classes\ClassAgent.cs" />
+    <Compile Include="Classes\ClassAssurance.cs" />
+    <Compile Include="Classes\ClassAssure.cs" />
     <Compile Include="Classes\ClassBase.cs" />
+    <Compile Include="Classes\ClassConge.cs" />
+    <Compile Include="Classes\ClassDeclaration.cs" />
     <Compile Include="Classes\ClassGlossaire.cs" />
+    <Compile Include="Classes\ClassPaie.cs" />
+    <Compile Include="Classes\ClassPresence.cs" />
+    <Compile Include="Classes\ClassReglement.cs" />
+    <Compile Include="Classes\ClassService.cs" />
+    <Compile Include="Classes\ClassTypeAssurance.cs" />
     <Compile Include="Classes\ClassUser.cs" />
     <Compile Include="Classes\Connection\ClassConnection.cs" />
     <Compile Include="Classes\Connection\ClassImplementConnection.cs" />

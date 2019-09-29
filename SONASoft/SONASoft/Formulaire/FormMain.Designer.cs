@@ -36,6 +36,7 @@
             this.BtnPersonnel = new DevExpress.XtraBars.BarButtonItem();
             this.BtnTechnique = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -44,6 +45,8 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -64,7 +67,7 @@
             this.BtnPersonnel,
             this.BtnTechnique});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 5;
+            this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -114,9 +117,17 @@
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup10,
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Accueil";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.AllowTextClipping = false;
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.ShowCaptionButton = false;
+            this.ribbonPageGroup10.Text = "Accueil";
             // 
             // ribbonPageGroup1
             // 
@@ -173,8 +184,21 @@
             // 
             // ribbonPage5
             // 
+            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup8,
+            this.ribbonPageGroup9});
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "Sinistre";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
             // 
             // ribbonPage4
             // 
@@ -189,14 +213,14 @@
             this.ribbonPageGroup6.AllowTextClipping = false;
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Analyse des données";
             // 
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.AllowTextClipping = false;
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.ShowCaptionButton = false;
-            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "Impression des rapports";
             // 
             // ribbonStatusBar1
             // 
@@ -232,6 +256,7 @@
             this.IsMdiContainer = true;
             this.Name = "FormMain";
             this.Ribbon = this.ribbonControl1;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "SONAS Soft";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
@@ -263,6 +288,8 @@
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private System.Windows.Forms.Panel PnlAccueil;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
     }
 }

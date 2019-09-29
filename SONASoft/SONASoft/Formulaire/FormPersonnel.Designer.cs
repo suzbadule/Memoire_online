@@ -37,11 +37,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPageConge = new System.Windows.Forms.TabPage();
@@ -54,11 +49,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.tabPageAgent = new System.Windows.Forms.TabPage();
@@ -86,27 +76,37 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.BtnEditService = new System.Windows.Forms.Button();
+            this.BtnNewService = new System.Windows.Forms.Button();
+            this.BtnSaveService = new System.Windows.Forms.Button();
+            this.BtnDeleteService = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.BtnEditConge = new System.Windows.Forms.Button();
+            this.BtnNewConge = new System.Windows.Forms.Button();
+            this.BtnSaveConge = new System.Windows.Forms.Button();
+            this.BtnDeleteConge = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnEditAgent = new System.Windows.Forms.Button();
+            this.BtnNewAgent = new System.Windows.Forms.Button();
+            this.BtnSaveAgent = new System.Windows.Forms.Button();
+            this.BtnDeleteAgent = new System.Windows.Forms.Button();
             this.DgvAgentdvdvdvd.SuspendLayout();
             this.tabPageService.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvService)).BeginInit();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.tabPageConge.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvConge)).BeginInit();
             this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
             this.tabPageAgent.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAgent)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,11 +158,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.groupBox6);
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.textBox4);
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Controls.Add(this.groupBox6);
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -204,55 +204,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(177, 20);
             this.textBox3.TabIndex = 7;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button5);
-            this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Controls.Add(this.button7);
-            this.groupBox6.Controls.Add(this.button8);
-            this.groupBox6.Location = new System.Drawing.Point(359, 19);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(374, 72);
-            this.groupBox6.TabIndex = 6;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Controle";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(194, 26);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Modifier";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(20, 26);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Nouveau";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(107, 26);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Enegistrer";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(284, 26);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Supprimer";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -306,13 +257,13 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.groupBox9);
             this.groupBox8.Controls.Add(this.maskedTextBox2);
             this.groupBox8.Controls.Add(this.maskedTextBox1);
             this.groupBox8.Controls.Add(this.label8);
             this.groupBox8.Controls.Add(this.label5);
             this.groupBox8.Controls.Add(this.label6);
             this.groupBox8.Controls.Add(this.textBox6);
-            this.groupBox8.Controls.Add(this.groupBox9);
             this.groupBox8.Controls.Add(this.label7);
             this.groupBox8.Controls.Add(this.textBox7);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -375,55 +326,6 @@
             this.textBox6.Size = new System.Drawing.Size(177, 20);
             this.textBox6.TabIndex = 7;
             // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.button9);
-            this.groupBox9.Controls.Add(this.button10);
-            this.groupBox9.Controls.Add(this.button11);
-            this.groupBox9.Controls.Add(this.button12);
-            this.groupBox9.Location = new System.Drawing.Point(359, 19);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(374, 72);
-            this.groupBox9.TabIndex = 6;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Controle";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(194, 26);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "Modifier";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(20, 26);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Nouveau";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(107, 26);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "Enegistrer";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(284, 26);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "Supprimer";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -476,6 +378,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.comboBox4);
@@ -495,7 +398,6 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
@@ -576,7 +478,7 @@
             // 
             this.groupBox10.Controls.Add(this.button13);
             this.groupBox10.Controls.Add(this.button16);
-            this.groupBox10.Location = new System.Drawing.Point(350, 97);
+            this.groupBox10.Location = new System.Drawing.Point(328, 97);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(374, 63);
             this.groupBox10.TabIndex = 19;
@@ -584,6 +486,7 @@
             // 
             // button13
             // 
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.Location = new System.Drawing.Point(20, 19);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(162, 23);
@@ -594,6 +497,7 @@
             // 
             // button16
             // 
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button16.Location = new System.Drawing.Point(196, 19);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(163, 23);
@@ -682,54 +586,164 @@
             this.textBox5.Size = new System.Drawing.Size(177, 20);
             this.textBox5.TabIndex = 9;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.BtnEditService);
+            this.groupBox6.Controls.Add(this.BtnNewService);
+            this.groupBox6.Controls.Add(this.BtnSaveService);
+            this.groupBox6.Controls.Add(this.BtnDeleteService);
+            this.groupBox6.Location = new System.Drawing.Point(321, 19);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(374, 68);
+            this.groupBox6.TabIndex = 11;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Controle";
+            // 
+            // BtnEditService
+            // 
+            this.BtnEditService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditService.Location = new System.Drawing.Point(196, 26);
+            this.BtnEditService.Name = "BtnEditService";
+            this.BtnEditService.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditService.TabIndex = 5;
+            this.BtnEditService.Text = "Modifier";
+            this.BtnEditService.UseVisualStyleBackColor = true;
+            // 
+            // BtnNewService
+            // 
+            this.BtnNewService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNewService.Location = new System.Drawing.Point(20, 26);
+            this.BtnNewService.Name = "BtnNewService";
+            this.BtnNewService.Size = new System.Drawing.Size(75, 23);
+            this.BtnNewService.TabIndex = 2;
+            this.BtnNewService.Text = "Nouveau";
+            this.BtnNewService.UseVisualStyleBackColor = true;
+            // 
+            // BtnSaveService
+            // 
+            this.BtnSaveService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSaveService.Location = new System.Drawing.Point(107, 26);
+            this.BtnSaveService.Name = "BtnSaveService";
+            this.BtnSaveService.Size = new System.Drawing.Size(75, 23);
+            this.BtnSaveService.TabIndex = 4;
+            this.BtnSaveService.Text = "Enegistrer";
+            this.BtnSaveService.UseVisualStyleBackColor = true;
+            // 
+            // BtnDeleteService
+            // 
+            this.BtnDeleteService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDeleteService.Location = new System.Drawing.Point(284, 26);
+            this.BtnDeleteService.Name = "BtnDeleteService";
+            this.BtnDeleteService.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeleteService.TabIndex = 3;
+            this.BtnDeleteService.Text = "Supprimer";
+            this.BtnDeleteService.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.BtnEditConge);
+            this.groupBox9.Controls.Add(this.BtnNewConge);
+            this.groupBox9.Controls.Add(this.BtnSaveConge);
+            this.groupBox9.Controls.Add(this.BtnDeleteConge);
+            this.groupBox9.Location = new System.Drawing.Point(328, 19);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(374, 68);
+            this.groupBox9.TabIndex = 15;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Controle";
+            // 
+            // BtnEditConge
+            // 
+            this.BtnEditConge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditConge.Location = new System.Drawing.Point(196, 26);
+            this.BtnEditConge.Name = "BtnEditConge";
+            this.BtnEditConge.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditConge.TabIndex = 5;
+            this.BtnEditConge.Text = "Modifier";
+            this.BtnEditConge.UseVisualStyleBackColor = true;
+            // 
+            // BtnNewConge
+            // 
+            this.BtnNewConge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNewConge.Location = new System.Drawing.Point(20, 26);
+            this.BtnNewConge.Name = "BtnNewConge";
+            this.BtnNewConge.Size = new System.Drawing.Size(75, 23);
+            this.BtnNewConge.TabIndex = 2;
+            this.BtnNewConge.Text = "Nouveau";
+            this.BtnNewConge.UseVisualStyleBackColor = true;
+            // 
+            // BtnSaveConge
+            // 
+            this.BtnSaveConge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSaveConge.Location = new System.Drawing.Point(107, 26);
+            this.BtnSaveConge.Name = "BtnSaveConge";
+            this.BtnSaveConge.Size = new System.Drawing.Size(75, 23);
+            this.BtnSaveConge.TabIndex = 4;
+            this.BtnSaveConge.Text = "Enegistrer";
+            this.BtnSaveConge.UseVisualStyleBackColor = true;
+            // 
+            // BtnDeleteConge
+            // 
+            this.BtnDeleteConge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDeleteConge.Location = new System.Drawing.Point(284, 26);
+            this.BtnDeleteConge.Name = "BtnDeleteConge";
+            this.BtnDeleteConge.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeleteConge.TabIndex = 3;
+            this.BtnDeleteConge.Text = "Supprimer";
+            this.BtnDeleteConge.UseVisualStyleBackColor = true;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Location = new System.Drawing.Point(350, 19);
+            this.groupBox3.Controls.Add(this.BtnEditAgent);
+            this.groupBox3.Controls.Add(this.BtnNewAgent);
+            this.groupBox3.Controls.Add(this.BtnSaveAgent);
+            this.groupBox3.Controls.Add(this.BtnDeleteAgent);
+            this.groupBox3.Location = new System.Drawing.Point(328, 18);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(374, 68);
-            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controle";
             // 
-            // button1
+            // BtnEditAgent
             // 
-            this.button1.Location = new System.Drawing.Point(196, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Modifier";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnEditAgent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditAgent.Location = new System.Drawing.Point(196, 26);
+            this.BtnEditAgent.Name = "BtnEditAgent";
+            this.BtnEditAgent.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditAgent.TabIndex = 5;
+            this.BtnEditAgent.Text = "Modifier";
+            this.BtnEditAgent.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnNewAgent
             // 
-            this.button2.Location = new System.Drawing.Point(20, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Nouveau";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnNewAgent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNewAgent.Location = new System.Drawing.Point(20, 26);
+            this.BtnNewAgent.Name = "BtnNewAgent";
+            this.BtnNewAgent.Size = new System.Drawing.Size(75, 23);
+            this.BtnNewAgent.TabIndex = 2;
+            this.BtnNewAgent.Text = "Nouveau";
+            this.BtnNewAgent.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnSaveAgent
             // 
-            this.button3.Location = new System.Drawing.Point(107, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Enegistrer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSaveAgent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSaveAgent.Location = new System.Drawing.Point(107, 26);
+            this.BtnSaveAgent.Name = "BtnSaveAgent";
+            this.BtnSaveAgent.Size = new System.Drawing.Size(75, 23);
+            this.BtnSaveAgent.TabIndex = 4;
+            this.BtnSaveAgent.Text = "Enegistrer";
+            this.BtnSaveAgent.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnDeleteAgent
             // 
-            this.button4.Location = new System.Drawing.Point(284, 26);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Supprimer";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnDeleteAgent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDeleteAgent.Location = new System.Drawing.Point(284, 26);
+            this.BtnDeleteAgent.Name = "BtnDeleteAgent";
+            this.BtnDeleteAgent.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeleteAgent.TabIndex = 3;
+            this.BtnDeleteAgent.Text = "Supprimer";
+            this.BtnDeleteAgent.UseVisualStyleBackColor = true;
             // 
             // FormPersonnel
             // 
@@ -747,19 +761,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvService)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
             this.tabPageConge.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvConge)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
             this.tabPageAgent.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAgent)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox10.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -778,11 +792,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox7;
@@ -794,11 +803,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -825,10 +829,20 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button BtnEditService;
+        private System.Windows.Forms.Button BtnNewService;
+        private System.Windows.Forms.Button BtnSaveService;
+        private System.Windows.Forms.Button BtnDeleteService;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button BtnEditConge;
+        private System.Windows.Forms.Button BtnNewConge;
+        private System.Windows.Forms.Button BtnSaveConge;
+        private System.Windows.Forms.Button BtnDeleteConge;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnEditAgent;
+        private System.Windows.Forms.Button BtnNewAgent;
+        private System.Windows.Forms.Button BtnSaveAgent;
+        private System.Windows.Forms.Button BtnDeleteAgent;
     }
 }

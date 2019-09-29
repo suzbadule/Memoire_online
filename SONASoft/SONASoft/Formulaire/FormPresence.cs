@@ -1,4 +1,5 @@
-﻿using Librairie.Classes;
+﻿using DevExpress.XtraEditors;
+using Librairie.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,20 @@ namespace SONASoft.Formulaire
 
         private void FormPresence_Load(object sender, EventArgs e)
         {
-            DgvPres.DataSource = Glossaire.Instance.LoadGrid("presence");
+            LoadGridControl();
+        }
+
+        private void LoadGridControl()
+        {
+            try
+            {
+                DgvPres.DataSource = Glossaire.Instance.LoadGrid("presence");
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
         }
     }
 }
+ 

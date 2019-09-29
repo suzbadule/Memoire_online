@@ -204,7 +204,7 @@ namespace Librairie.Classes
             }
         }
 
-        public void InsertUpdateObject(Base obj, string table)
+        public void InsertUpdateTypeAssurance(TypeAssurance obj)
         {
             InitializeConnexion();
 
@@ -212,18 +212,126 @@ namespace Librairie.Classes
             {
                 if (obj.Id == 0)
                 {
-                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`" + table + "` (`designation`) " +
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`type_assurance` (`designation`) " +
                         "VALUES (@designation);";
 
                     cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
                 }
                 else
                 {
-                    cmd.CommandText = "UPDATE `sonas_bdd`.`" + table + "` SET `designation` = @designation " +
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`type_assurance` SET `designation` = @designation " +
                         "WHERE `id` = @id ;";
 
                     cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, obj.Id));
                     cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
+                }
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void InsertUpdatePaie(Paie obj)
+        {
+            InitializeConnexion();
+
+            using (IDbCommand cmd = ImplementConnection.Instance.Con.CreateCommand())
+            {
+                if (obj.Id == 0)
+                {
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`paie`(`annee`,`Janvier`,`Fevrier`,`Mars`," +
+                        "`Avril`,`Mai`,`Juin`,`Juillet`,`Aout`,`Septembre`,`Octobre`,`Novembre`,`Decembre`) " +
+                        " VALUES (@annee,@Janvier,@Fevrier,@Mars,@Avril,@Mai,@Juin,@Juillet,@Aout,@Septembre, " + 
+                        "@Octobre,@Novembre,@Decembre); ";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@annee", 50, DbType.String, obj.Annee));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Janvier", 50, DbType.String, obj.Janvier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Fevrier", 50, DbType.String, obj.Fevrier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mars", 50, DbType.String, obj.Mars));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Avril", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mai", 50, DbType.String, obj.Mai));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juin", 50, DbType.String, obj.Juin));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juillet", 50, DbType.String, obj.Juillet));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Aout", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Septembre", 50, DbType.String, obj.Septembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Octobre", 50, DbType.String, obj.Octobre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Novembre", 50, DbType.String, obj.Novembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Decembre", 50, DbType.String, obj.Decembre));
+                }
+                else
+                {
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`paie` SET `annee` = @annee,`Janvier` = @Janvier, " +
+                        "`Fevrier` = @Fevrier,`Mars` = @Mars,`Avril` = @Avril,`Mai` = @Mai,`Juin` = @Juin, " + 
+                        "`Juillet` = @Juillet,`Aout` = @Aout,`Septembre` = @Septembre,`Octobre` = @Octobre, " + 
+                        "`Novembre` = @Novembre,`Decembre` = @Decembre WHERE `id` = @id; ";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, obj.Id));
+                    cmd.Parameters.Add(GetParameter(cmd, "@annee", 50, DbType.String, obj.Annee));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Janvier", 50, DbType.String, obj.Janvier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Fevrier", 50, DbType.String, obj.Fevrier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mars", 50, DbType.String, obj.Mars));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Avril", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mai", 50, DbType.String, obj.Mai));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juin", 50, DbType.String, obj.Juin));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juillet", 50, DbType.String, obj.Juillet));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Aout", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Septembre", 50, DbType.String, obj.Septembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Octobre", 50, DbType.String, obj.Octobre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Novembre", 50, DbType.String, obj.Novembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Decembre", 50, DbType.String, obj.Decembre));
+                }
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void InsertUpdatePresence(Presence obj)
+        {
+            InitializeConnexion();
+
+            using (IDbCommand cmd = ImplementConnection.Instance.Con.CreateCommand())
+            {
+                if (obj.Id == 0)
+                {
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`presence`(`annee`,`Janvier`,`Fevrier`,`Mars`," +
+                        "`Avril`,`Mai`,`Juin`,`Juillet`,`Aout`,`Septembre`,`Octobre`,`Novembre`,`Decembre`) " +
+                        " VALUES (@annee,@Janvier,@Fevrier,@Mars,@Avril,@Mai,@Juin,@Juillet,@Aout,@Septembre, " +
+                        "@Octobre,@Novembre,@Decembre); ";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@annee", 50, DbType.String, obj.Annee));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Janvier", 50, DbType.String, obj.Janvier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Fevrier", 50, DbType.String, obj.Fevrier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mars", 50, DbType.String, obj.Mars));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Avril", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mai", 50, DbType.String, obj.Mai));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juin", 50, DbType.String, obj.Juin));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juillet", 50, DbType.String, obj.Juillet));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Aout", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Septembre", 50, DbType.String, obj.Septembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Octobre", 50, DbType.String, obj.Octobre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Novembre", 50, DbType.String, obj.Novembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Decembre", 50, DbType.String, obj.Decembre));
+                }
+                else
+                {
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`presence` SET `annee` = @annee,`Janvier` = @Janvier, " +
+                        "`Fevrier` = @Fevrier,`Mars` = @Mars,`Avril` = @Avril,`Mai` = @Mai,`Juin` = @Juin, " +
+                        "`Juillet` = @Juillet,`Aout` = @Aout,`Septembre` = @Septembre,`Octobre` = @Octobre, " +
+                        "`Novembre` = @Novembre,`Decembre` = @Decembre WHERE `id` = @id; ";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, obj.Id));
+                    cmd.Parameters.Add(GetParameter(cmd, "@annee", 50, DbType.String, obj.Annee));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Janvier", 50, DbType.String, obj.Janvier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Fevrier", 50, DbType.String, obj.Fevrier));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mars", 50, DbType.String, obj.Mars));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Avril", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Mai", 50, DbType.String, obj.Mai));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juin", 50, DbType.String, obj.Juin));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Juillet", 50, DbType.String, obj.Juillet));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Aout", 50, DbType.String, obj.Avril));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Septembre", 50, DbType.String, obj.Septembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Octobre", 50, DbType.String, obj.Octobre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Novembre", 50, DbType.String, obj.Novembre));
+                    cmd.Parameters.Add(GetParameter(cmd, "@Decembre", 50, DbType.String, obj.Decembre));
                 }
 
                 cmd.ExecuteNonQuery();

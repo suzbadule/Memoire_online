@@ -85,6 +85,12 @@
     <Compile Include="Formulaire\FormPresence.Designer.cs">
       <DependentUpon>FormPresence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaire\FormSinistre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormSinistre.Designer.cs">
+      <DependentUpon>FormSinistre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulaire\FormTechnique.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\FormPresence.resx">
       <DependentUpon>FormPresence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormSinistre.resx">
+      <DependentUpon>FormSinistre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\FormTechnique.resx">
       <DependentUpon>FormTechnique.cs</DependentUpon>

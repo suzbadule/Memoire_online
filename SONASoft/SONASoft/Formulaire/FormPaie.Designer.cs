@@ -30,39 +30,39 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.TxtDec = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.TxtNov = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.TxtOct = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.TxtSept = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TxtAout = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtJuil = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtJuin = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.TxtMai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtAvril = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtMars = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtFev = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtJan = new System.Windows.Forms.TextBox();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.TxtAnnee = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnEdit = new System.Windows.Forms.Button();
+            this.BtnNew = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.BtnDelete = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DgvPaie = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -75,34 +75,34 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.TxtDec);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.TxtNov);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.TxtOct);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.TxtSept);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.TxtAout);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.TxtJuil);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.TxtJuin);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.TxtMai);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.TxtAvril);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.TxtMars);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TxtFev);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TxtJan);
             this.groupBox1.Controls.Add(this.separatorControl1);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.TxtAnnee);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.TxtId);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -121,12 +121,13 @@
             this.label11.TabIndex = 40;
             this.label11.Text = "Décembre : ";
             // 
-            // textBox10
+            // TxtDec
             // 
-            this.textBox10.Location = new System.Drawing.Point(465, 202);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(63, 20);
-            this.textBox10.TabIndex = 39;
+            this.TxtDec.Location = new System.Drawing.Point(465, 202);
+            this.TxtDec.Name = "TxtDec";
+            this.TxtDec.Size = new System.Drawing.Size(63, 20);
+            this.TxtDec.TabIndex = 39;
+            this.TxtDec.Text = "0";
             // 
             // label12
             // 
@@ -137,12 +138,13 @@
             this.label12.TabIndex = 38;
             this.label12.Text = "Novembre : ";
             // 
-            // textBox11
+            // TxtNov
             // 
-            this.textBox11.Location = new System.Drawing.Point(465, 176);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(63, 20);
-            this.textBox11.TabIndex = 37;
+            this.TxtNov.Location = new System.Drawing.Point(465, 176);
+            this.TxtNov.Name = "TxtNov";
+            this.TxtNov.Size = new System.Drawing.Size(63, 20);
+            this.TxtNov.TabIndex = 37;
+            this.TxtNov.Text = "0";
             // 
             // label13
             // 
@@ -153,12 +155,13 @@
             this.label13.TabIndex = 36;
             this.label13.Text = "Octobre : ";
             // 
-            // textBox12
+            // TxtOct
             // 
-            this.textBox12.Location = new System.Drawing.Point(465, 150);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(63, 20);
-            this.textBox12.TabIndex = 35;
+            this.TxtOct.Location = new System.Drawing.Point(465, 150);
+            this.TxtOct.Name = "TxtOct";
+            this.TxtOct.Size = new System.Drawing.Size(63, 20);
+            this.TxtOct.TabIndex = 35;
+            this.TxtOct.Text = "0";
             // 
             // label14
             // 
@@ -169,12 +172,13 @@
             this.label14.TabIndex = 34;
             this.label14.Text = "Septembre : ";
             // 
-            // textBox13
+            // TxtSept
             // 
-            this.textBox13.Location = new System.Drawing.Point(465, 124);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(63, 20);
-            this.textBox13.TabIndex = 33;
+            this.TxtSept.Location = new System.Drawing.Point(465, 124);
+            this.TxtSept.Name = "TxtSept";
+            this.TxtSept.Size = new System.Drawing.Size(63, 20);
+            this.TxtSept.TabIndex = 33;
+            this.TxtSept.Text = "0";
             // 
             // label6
             // 
@@ -185,12 +189,13 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Août : ";
             // 
-            // textBox6
+            // TxtAout
             // 
-            this.textBox6.Location = new System.Drawing.Point(264, 202);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(63, 20);
-            this.textBox6.TabIndex = 31;
+            this.TxtAout.Location = new System.Drawing.Point(264, 202);
+            this.TxtAout.Name = "TxtAout";
+            this.TxtAout.Size = new System.Drawing.Size(63, 20);
+            this.TxtAout.TabIndex = 31;
+            this.TxtAout.Text = "0";
             // 
             // label7
             // 
@@ -201,12 +206,13 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Juillet : ";
             // 
-            // textBox7
+            // TxtJuil
             // 
-            this.textBox7.Location = new System.Drawing.Point(264, 176);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(63, 20);
-            this.textBox7.TabIndex = 29;
+            this.TxtJuil.Location = new System.Drawing.Point(264, 176);
+            this.TxtJuil.Name = "TxtJuil";
+            this.TxtJuil.Size = new System.Drawing.Size(63, 20);
+            this.TxtJuil.TabIndex = 29;
+            this.TxtJuil.Text = "0";
             // 
             // label8
             // 
@@ -217,12 +223,13 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Juin : ";
             // 
-            // textBox8
+            // TxtJuin
             // 
-            this.textBox8.Location = new System.Drawing.Point(264, 150);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(63, 20);
-            this.textBox8.TabIndex = 27;
+            this.TxtJuin.Location = new System.Drawing.Point(264, 150);
+            this.TxtJuin.Name = "TxtJuin";
+            this.TxtJuin.Size = new System.Drawing.Size(63, 20);
+            this.TxtJuin.TabIndex = 27;
+            this.TxtJuin.Text = "0";
             // 
             // label10
             // 
@@ -233,12 +240,13 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Mai : ";
             // 
-            // textBox9
+            // TxtMai
             // 
-            this.textBox9.Location = new System.Drawing.Point(264, 124);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(63, 20);
-            this.textBox9.TabIndex = 25;
+            this.TxtMai.Location = new System.Drawing.Point(264, 124);
+            this.TxtMai.Name = "TxtMai";
+            this.TxtMai.Size = new System.Drawing.Size(63, 20);
+            this.TxtMai.TabIndex = 25;
+            this.TxtMai.Text = "0";
             // 
             // label3
             // 
@@ -249,12 +257,13 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Avril : ";
             // 
-            // textBox3
+            // TxtAvril
             // 
-            this.textBox3.Location = new System.Drawing.Point(80, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(63, 20);
-            this.textBox3.TabIndex = 23;
+            this.TxtAvril.Location = new System.Drawing.Point(80, 202);
+            this.TxtAvril.Name = "TxtAvril";
+            this.TxtAvril.Size = new System.Drawing.Size(63, 20);
+            this.TxtAvril.TabIndex = 23;
+            this.TxtAvril.Text = "0";
             // 
             // label4
             // 
@@ -265,12 +274,13 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Mars : ";
             // 
-            // textBox4
+            // TxtMars
             // 
-            this.textBox4.Location = new System.Drawing.Point(80, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(63, 20);
-            this.textBox4.TabIndex = 21;
+            this.TxtMars.Location = new System.Drawing.Point(80, 176);
+            this.TxtMars.Name = "TxtMars";
+            this.TxtMars.Size = new System.Drawing.Size(63, 20);
+            this.TxtMars.TabIndex = 21;
+            this.TxtMars.Text = "0";
             // 
             // label2
             // 
@@ -281,12 +291,13 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Février : ";
             // 
-            // textBox2
+            // TxtFev
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 150);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(63, 20);
-            this.textBox2.TabIndex = 19;
+            this.TxtFev.Location = new System.Drawing.Point(80, 150);
+            this.TxtFev.Name = "TxtFev";
+            this.TxtFev.Size = new System.Drawing.Size(63, 20);
+            this.TxtFev.TabIndex = 19;
+            this.TxtFev.Text = "0";
             // 
             // label1
             // 
@@ -297,12 +308,13 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Janvier : ";
             // 
-            // textBox1
+            // TxtJan
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 20);
-            this.textBox1.TabIndex = 17;
+            this.TxtJan.Location = new System.Drawing.Point(80, 124);
+            this.TxtJan.Name = "TxtJan";
+            this.TxtJan.Size = new System.Drawing.Size(63, 20);
+            this.TxtJan.TabIndex = 17;
+            this.TxtJan.Text = "0";
             // 
             // separatorControl1
             // 
@@ -311,14 +323,13 @@
             this.separatorControl1.Size = new System.Drawing.Size(508, 25);
             this.separatorControl1.TabIndex = 16;
             // 
-            // maskedTextBox1
+            // TxtAnnee
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(80, 55);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(63, 20);
-            this.maskedTextBox1.TabIndex = 15;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.TxtAnnee.Location = new System.Drawing.Point(80, 55);
+            this.TxtAnnee.Mask = "0000";
+            this.TxtAnnee.Name = "TxtAnnee";
+            this.TxtAnnee.Size = new System.Drawing.Size(63, 20);
+            this.TxtAnnee.TabIndex = 15;
             // 
             // label5
             // 
@@ -338,19 +349,20 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Id : ";
             // 
-            // textBox5
+            // TxtId
             // 
-            this.textBox5.Location = new System.Drawing.Point(80, 27);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(63, 20);
-            this.textBox5.TabIndex = 11;
+            this.TxtId.Location = new System.Drawing.Point(80, 27);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.ReadOnly = true;
+            this.TxtId.Size = new System.Drawing.Size(63, 20);
+            this.TxtId.TabIndex = 11;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.BtnEdit);
+            this.groupBox3.Controls.Add(this.BtnNew);
+            this.groupBox3.Controls.Add(this.BtnSave);
+            this.groupBox3.Controls.Add(this.BtnDelete);
             this.groupBox3.Location = new System.Drawing.Point(161, 19);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(374, 68);
@@ -358,41 +370,49 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controle";
             // 
-            // button1
+            // BtnEdit
             // 
-            this.button1.Location = new System.Drawing.Point(196, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Modifier";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEdit.Location = new System.Drawing.Point(196, 26);
+            this.BtnEdit.Name = "BtnEdit";
+            this.BtnEdit.Size = new System.Drawing.Size(75, 23);
+            this.BtnEdit.TabIndex = 5;
+            this.BtnEdit.Text = "Modifier";
+            this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.Controle_Click);
             // 
-            // button2
+            // BtnNew
             // 
-            this.button2.Location = new System.Drawing.Point(20, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Nouveau";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNew.Location = new System.Drawing.Point(20, 26);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(75, 23);
+            this.BtnNew.TabIndex = 2;
+            this.BtnNew.Text = "Nouveau";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.Controle_Click);
             // 
-            // button3
+            // BtnSave
             // 
-            this.button3.Location = new System.Drawing.Point(107, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Enegistrer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSave.Location = new System.Drawing.Point(107, 26);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(75, 23);
+            this.BtnSave.TabIndex = 4;
+            this.BtnSave.Text = "Enegistrer";
+            this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.Controle_Click);
             // 
-            // button4
+            // BtnDelete
             // 
-            this.button4.Location = new System.Drawing.Point(284, 26);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Supprimer";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelete.Location = new System.Drawing.Point(284, 26);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(75, 23);
+            this.BtnDelete.TabIndex = 3;
+            this.BtnDelete.Text = "Supprimer";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.Controle_Click);
             // 
             // groupBox2
             // 
@@ -411,8 +431,10 @@
             this.DgvPaie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvPaie.Location = new System.Drawing.Point(3, 16);
             this.DgvPaie.Name = "DgvPaie";
+            this.DgvPaie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvPaie.Size = new System.Drawing.Size(548, 154);
             this.DgvPaie.TabIndex = 1;
+            this.DgvPaie.DoubleClick += new System.EventHandler(this.GridView_DoubleClick);
             // 
             // FormPaie
             // 
@@ -424,7 +446,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormPaie";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Paiement";
             this.Load += new System.EventHandler(this.FormPaie_Load);
             this.groupBox1.ResumeLayout(false);
@@ -443,38 +465,38 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView DgvPaie;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnEdit;
+        private System.Windows.Forms.Button BtnNew;
+        private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtId;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox TxtAnnee;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox TxtDec;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox TxtNov;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox TxtOct;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox TxtSept;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtAout;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtJuil;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtJuin;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox TxtMai;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtAvril;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtMars;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtFev;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtJan;
     }
 }
