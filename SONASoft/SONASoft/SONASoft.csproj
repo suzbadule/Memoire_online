@@ -32,8 +32,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,10 +51,67 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formulaire\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\FormPaie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormPaie.Designer.cs">
+      <DependentUpon>FormPaie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\FormPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormPersonnel.Designer.cs">
+      <DependentUpon>FormPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\FormPresence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormPresence.Designer.cs">
+      <DependentUpon>FormPresence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\FormTechnique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\FormTechnique.Designer.cs">
+      <DependentUpon>FormTechnique.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulaire\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormPaie.resx">
+      <DependentUpon>FormPaie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormPersonnel.resx">
+      <DependentUpon>FormPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormPresence.resx">
+      <DependentUpon>FormPresence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\FormTechnique.resx">
+      <DependentUpon>FormTechnique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -55,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -70,8 +136,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formulaire\" />
     <Folder Include="Rapport\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Librairie\Librairie.csproj">
+      <Project>{3df04422-a1c0-45c8-9bb6-db9c8576b512}</Project>
+      <Name>Librairie</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodepartment_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodepartment_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

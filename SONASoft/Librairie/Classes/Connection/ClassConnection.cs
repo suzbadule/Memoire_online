@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace OneConnexion
+namespace Librairie.Classes.Connection
 {
-    public class Connexion
+    public class Connection
     {
         string _serveur = "serveur";
         string _database = "database";
@@ -10,7 +14,7 @@ namespace OneConnexion
         string _password = "password";
         int _port = 0;
 
-        public Connexion()
+        public Connection()
         {
 
         }
