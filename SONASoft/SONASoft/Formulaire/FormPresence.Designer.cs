@@ -92,6 +92,7 @@
             this.DgvPres.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvPres.Size = new System.Drawing.Size(548, 154);
             this.DgvPres.TabIndex = 1;
+            this.DgvPres.DoubleClick += new System.EventHandler(this.GridView_DoubleClick);
             // 
             // groupBox1
             // 
@@ -143,11 +144,10 @@
             // TxtAnnee
             // 
             this.TxtAnnee.Location = new System.Drawing.Point(80, 55);
-            this.TxtAnnee.Mask = "00/00/0000";
+            this.TxtAnnee.Mask = "0000";
             this.TxtAnnee.Name = "TxtAnnee";
             this.TxtAnnee.Size = new System.Drawing.Size(63, 20);
             this.TxtAnnee.TabIndex = 15;
-            this.TxtAnnee.ValidatingType = typeof(System.DateTime);
             // 
             // label5
             // 
@@ -197,6 +197,7 @@
             this.BtnEdit.TabIndex = 5;
             this.BtnEdit.Text = "Modifier";
             this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.Controle_Click);
             // 
             // BtnNew
             // 
@@ -207,6 +208,7 @@
             this.BtnNew.TabIndex = 2;
             this.BtnNew.Text = "Nouveau";
             this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.Controle_Click);
             // 
             // BtnSave
             // 
@@ -217,6 +219,7 @@
             this.BtnSave.TabIndex = 4;
             this.BtnSave.Text = "Enegistrer";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.Controle_Click);
             // 
             // BtnDelete
             // 
@@ -227,6 +230,7 @@
             this.BtnDelete.TabIndex = 3;
             this.BtnDelete.Text = "Supprimer";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.Controle_Click);
             // 
             // label11
             // 
