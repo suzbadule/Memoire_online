@@ -259,6 +259,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "SONAS Soft";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

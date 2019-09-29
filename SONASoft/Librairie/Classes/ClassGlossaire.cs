@@ -338,6 +338,64 @@ namespace Librairie.Classes
             }
         }
 
+        public void InsertUpdateService(Service obj)
+        {
+            InitializeConnexion();
+
+            using (IDbCommand cmd = ImplementConnection.Instance.Con.CreateCommand())
+            {
+                if (obj.Id == 0)
+                {
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`service` (`designation`,`fonctionnalite`) " +
+                        "VALUES (@designation,@fonctionnalite);";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
+                    cmd.Parameters.Add(GetParameter(cmd, "@fonctionnalite", 50, DbType.String, obj.Fonctionnalite));
+                }
+                else
+                {
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`service` SET `designation` = @designation, " +
+                        " `fonctionnalite` = @fonctionnalite WHERE `id` = @id ;";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, obj.Id));
+                    cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
+                    cmd.Parameters.Add(GetParameter(cmd, "@fonctionnalite", 50, DbType.String, obj.Fonctionnalite));
+                }
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void InsertUpdateConge(Conge obj)
+        {
+            InitializeConnexion();
+
+            using (IDbCommand cmd = ImplementConnection.Instance.Con.CreateCommand())
+            {
+                if (obj.Id == 0)
+                {
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`conge` (`designation`,`date_debut`,`date_fin`) " +
+                        "VALUES (@designation,@date_debut,@date_fin);";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
+                    cmd.Parameters.Add(GetParameter(cmd, "@date_debut", 50, DbType.String, obj.DateDebut));
+                    cmd.Parameters.Add(GetParameter(cmd, "@date_fin", 50, DbType.String, obj.DateFin));
+                }
+                else
+                {
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`service` SET `designation` = @designation, " +
+                        " `date_debut` = @date_debut, `date_fin` = @date_fin WHERE `id` = @id ;";
+
+                    cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, obj.Id));
+                    cmd.Parameters.Add(GetParameter(cmd, "@designation", 50, DbType.String, obj.Designation));
+                    cmd.Parameters.Add(GetParameter(cmd, "@date_debut", 50, DbType.String, obj.DateDebut));
+                    cmd.Parameters.Add(GetParameter(cmd, "@date_fin", 50, DbType.String, obj.DateFin));
+                }
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         public void InsertUpdateAgent(Agent agent)
         {
             InitializeConnexion();
@@ -346,37 +404,35 @@ namespace Librairie.Classes
             {
                 if (agent.Id == 0)
                 {
-                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`agent` (`nom`,`postnom`,`prenom`,`sexe`," +
-                        "`date_naissance`,`lieu_naissance`,`adresse`,`telephone`,`ref_bareme`) VALUES " +
-                        "(@nom,@postnom,@prenom,@sexe,@date_naissance,@lieu_naissance,@adresse,@telephone,@ref_bareme);";
+                    cmd.CommandText = "INSERT INTO `sonas_bdd`.`agent` (`matricule`,`nom`,`adresse`,`email`, " + 
+                        "`id_service`,`id_conge`,`id_paie`,`id_presence`) VALUES (@matricule,@nom,@adresse, " +
+                        "@email,@id_service,@id_conge,@id_paie,@id_presence); ";
 
-                    //cmd.Parameters.Add(GetParameter(cmd, "@nom", 50, DbType.String, agent.Nom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@postnom", 50, DbType.String, agent.Postnom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@prenom", 50, DbType.String, agent.Prenom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@sexe", 50, DbType.String, agent.Sexe));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@date_naissance", 50, DbType.Date, agent.DateNaissance));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@lieu_naissance", 50, DbType.String, agent.LieuNaissance));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@adresse", 100, DbType.String, agent.Adresse));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@telephone", 50, DbType.String, agent.Telephone));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@ref_bareme", 4, DbType.Int32, agent.RefBareme));
+                    cmd.Parameters.Add(GetParameter(cmd, "@nom", 50, DbType.String, agent.Nom));
+                    cmd.Parameters.Add(GetParameter(cmd, "@matricule", 50, DbType.String, agent.Matricule));
+                    cmd.Parameters.Add(GetParameter(cmd, "@adresse", 50, DbType.String, agent.Adresse));
+                    cmd.Parameters.Add(GetParameter(cmd, "@email", 50, DbType.String, agent.Email));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_service", 4, DbType.Int32, agent.RefService));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_conge", 4, DbType.Int32, agent.RefConge));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_paie", 4, DbType.Int32, agent.RefPaie));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_presence", 4, DbType.Int32, agent.RefPresence));
+
                 }
                 else
                 {
-                    cmd.CommandText = "UPDATE `sonas_bdd`.`agent` SET `nom` = @nom,`postnom` = @postnom," +
-                        "`prenom` = @prenom,`sexe` = @sexe,`date_naissance` = @date_naissance," +
-                        "`lieu_naissance` = @lieu_naissance,`adresse` = @adresse,`telephone` = @telephone," +
-                        "`ref_bareme` = @ref_bareme WHERE `id` = @id;";
+                    cmd.CommandText = "UPDATE `sonas_bdd`.`agent` SET `matricule` = @matricule, `nom` = @nom, " +
+                        "`adresse` = @adresse, `email` = @email, `id_service` = @id_service, `id_conge` = @id_conge, " +
+                        "`id_paie` = @id_paie, `id_presence` = @id_presence WHERE `id` = @id;";
 
-                    //cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, agent.Id));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@nom", 50, DbType.String, agent.Nom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@postnom", 50, DbType.String, agent.Postnom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@prenom", 50, DbType.String, agent.Prenom));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@sexe", 50, DbType.String, agent.Sexe));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@date_naissance", 50, DbType.Date, agent.DateNaissance));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@lieu_naissance", 50, DbType.String, agent.LieuNaissance));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@adresse", 100, DbType.String, agent.Adresse));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@telephone", 50, DbType.String, agent.Telephone));
-                    //cmd.Parameters.Add(GetParameter(cmd, "@ref_bareme", 4, DbType.Int32, agent.RefBareme));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id", 4, DbType.Int32, agent.Id));
+                    cmd.Parameters.Add(GetParameter(cmd, "@nom", 50, DbType.String, agent.Nom));
+                    cmd.Parameters.Add(GetParameter(cmd, "@matricule", 50, DbType.String, agent.Matricule));
+                    cmd.Parameters.Add(GetParameter(cmd, "@adresse", 50, DbType.String, agent.Adresse));
+                    cmd.Parameters.Add(GetParameter(cmd, "@email", 50, DbType.String, agent.Email));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_service", 4, DbType.Int32, agent.RefService));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_conge", 4, DbType.Int32, agent.RefConge));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_paie", 4, DbType.Int32, agent.RefPaie));
+                    cmd.Parameters.Add(GetParameter(cmd, "@id_presence", 4, DbType.Int32, agent.RefPresence));
                 }
 
                 cmd.ExecuteNonQuery();

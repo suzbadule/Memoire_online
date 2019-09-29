@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Librairie.Classes.Connection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace SONASoft.Formulaire
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         private Form form = null;
+        private Connection con = null;
 
         public FormMain()
         {
@@ -72,6 +74,19 @@ namespace SONASoft.Formulaire
             string s = e.Link.Item.Name.Substring(3);
             PnlAccueil.Visible = false;
             SelectForms(s);
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            con = new Connection();
+
+            con.Server = "localhost";
+            con.Database = "sonas_bdd";
+            con.User = "root";
+            con.Password = "root";
+
+            ImplementConnection.Instance.Initialize(con, ConnectionType.MySQL);
+            ImplementConnection.Instance.Con.Open();
         }
     }
 }
