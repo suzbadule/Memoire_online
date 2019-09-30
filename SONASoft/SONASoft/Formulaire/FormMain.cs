@@ -50,6 +50,28 @@ namespace SONASoft.Formulaire
                         }
                         break;
 
+                    case "Analyse":
+                        form = new FormAnalyse
+                        {
+                            MdiParent = this,
+                        };
+                        if (form.IsMdiChild)
+                        {
+                            form.Show();
+                        }
+                        break;
+
+                    case "Rapport":
+                        form = new FormRapport
+                        {
+                            MdiParent = this,
+                        };
+                        if (form.IsMdiChild)
+                        {
+                            form.Show();
+                        }
+                        break;
+
                     case "Connexion":
                         form = new FormLogin
                         {

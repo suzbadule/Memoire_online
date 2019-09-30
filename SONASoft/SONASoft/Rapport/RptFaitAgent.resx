@@ -117,35 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="newtablestyle_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\newtablestyle_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graphique_agent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\graphique_agent1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bodepartment_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bodepartment_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sonas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sonas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bodepartment_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bodepartment_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graphique_vente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\graphique_vente.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graphique_agent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\graphique_agent.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="newtablestyle_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\newtablestyle_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="preview_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\preview_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="preview_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\preview_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9ImZhaXRfYWdlbnQiPjxGaWVsZCBOYW1lPSJNQVRSSUNVTEUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU0VSVklDRSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQUkVTRU5DRSBKQU5WSUVSIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUFJFU0VOQ0UgRkVWUklFUiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIE1BUlMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQUkVTRU5DRSBBVlJJTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIE1BSSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIEpVSU4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQUkVTRU5DRSBKVUlMTEVUIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUFJFU0VOQ0UgQU9VVCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIFNFUFRFTUJSRSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIE9DVE9CUkUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQUkVTRU5DRSBOT1ZFTUJSRSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBSRVNFTkNFIERFQ0VNQlJFIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBKQU5WSUVSIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBGRVZSSUVSIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBNQVJTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBBVlJJTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBBSUUgTUFJIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBKVUlOIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBKVUlMTEVUIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBBT1VUIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBTRVBURU1CUkUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQQUlFIE9DVE9CUkUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQQUlFIE5PVkVNQlJFIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEFJRSBERUNFTUJSRSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNPTkdFIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
 </root>

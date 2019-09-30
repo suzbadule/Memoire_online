@@ -3,8 +3,6 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Librairie.Classes
@@ -25,28 +23,6 @@ namespace Librairie.Classes
             a.Value = value;
 
             return a;
-        }
-
-        private static void SetParameter(IDbCommand cmd, string name, int length, DbType type, object value)
-        {
-
-            IDbDataParameter a = cmd.CreateParameter();
-            a.ParameterName = name;
-            a.Size = length;
-            a.DbType = type;
-
-            if (value == null)
-            {
-                if (!a.IsNullable)
-                {
-                    a.DbType = DbType.String;
-                }
-                a.Value = DBNull.Value;
-            }
-            else
-                a.Value = value;
-
-            cmd.Parameters.Add(a);
         }
 
         public static Glossaire Instance

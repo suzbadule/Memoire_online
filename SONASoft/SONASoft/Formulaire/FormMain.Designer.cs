@@ -35,6 +35,8 @@
             this.BtnDeconnexion = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonnel = new DevExpress.XtraBars.BarButtonItem();
             this.BtnTechnique = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAnalyse = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRapport = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -65,9 +67,11 @@
             this.BtnConnexion,
             this.BtnDeconnexion,
             this.BtnPersonnel,
-            this.BtnTechnique});
+            this.BtnTechnique,
+            this.BtnAnalyse,
+            this.BtnRapport});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 6;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -113,6 +117,26 @@
             this.BtnTechnique.Name = "BtnTechnique";
             this.BtnTechnique.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnTechnique.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.LoadForms_ItemClick);
+            // 
+            // BtnAnalyse
+            // 
+            this.BtnAnalyse.Caption = "Analyse";
+            this.BtnAnalyse.Glyph = global::SONASoft.Properties.Resources.newtablestyle_16x16;
+            this.BtnAnalyse.Id = 6;
+            this.BtnAnalyse.LargeGlyph = global::SONASoft.Properties.Resources.newtablestyle_32x32;
+            this.BtnAnalyse.Name = "BtnAnalyse";
+            this.BtnAnalyse.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnAnalyse.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.LoadForms_ItemClick);
+            // 
+            // BtnRapport
+            // 
+            this.BtnRapport.Caption = "Rapport";
+            this.BtnRapport.Glyph = global::SONASoft.Properties.Resources.preview_16x16;
+            this.BtnRapport.Id = 7;
+            this.BtnRapport.LargeGlyph = global::SONASoft.Properties.Resources.preview_32x32;
+            this.BtnRapport.Name = "BtnRapport";
+            this.BtnRapport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnRapport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.LoadForms_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -211,6 +235,7 @@
             // ribbonPageGroup6
             // 
             this.ribbonPageGroup6.AllowTextClipping = false;
+            this.ribbonPageGroup6.ItemLinks.Add(this.BtnAnalyse);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Analyse des données";
@@ -218,6 +243,7 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.AllowTextClipping = false;
+            this.ribbonPageGroup7.ItemLinks.Add(this.BtnRapport);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.ShowCaptionButton = false;
             this.ribbonPageGroup7.Text = "Impression des rapports";
@@ -292,5 +318,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
+        private DevExpress.XtraBars.BarButtonItem BtnAnalyse;
+        private DevExpress.XtraBars.BarButtonItem BtnRapport;
     }
 }
